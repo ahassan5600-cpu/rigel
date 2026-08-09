@@ -1,0 +1,63 @@
+name: Publish RIGEL on GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Prepare public entry
+        shell: bash
+        run: |
+          mkdir -p _site
+          cat > _site/index.html <<'HTML'
+          <!doctype html>
+          <html lang="ar" dir="rtl">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta http-equiv="refresh" content="0;url=https://rigel-abaya-house.ahassan5600.chatgpt.site/">
+            <link rel="canonical" href="https://rigel-abaya-house.ahassan5600.chatgpt.site/">
+            <title>RIGEL | مصمّمة لتلفت بهدوء</title>
+            <style>
+              *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#020e24;color:#fff;font-family:Arial,sans-serif;text-align:center}.card{padding:2.5rem}.brand{font-family:Georgia,serif;font-size:3.5rem;letter-spacing:.12em;margin:0 0 1rem}.copy{color:#c9d1df;margin:0 0 1.5rem}.link{display:inline-block;color:#fff;border:1px solid #6e7f99;border-radius:999px;padding:.8rem 1.4rem;text-decoration:none}
+            </style>
+          </head>
+          <body>
+            <main class="card">
+              <h1 class="brand">RIGEL</h1>
+              <p class="copy">جارٍ فتح متجر RIGEL الرسمي…</p>
+              <a class="link" href="https://rigel-abaya-house.ahassan5600.chatgpt.site/">فتح الموقع</a>
+            </main>
+            <script>location.replace("https://rigel-abaya-house.ahassan5600.chatgpt.site/");</script>
+          </body>
+          </html>
+          HTML
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
