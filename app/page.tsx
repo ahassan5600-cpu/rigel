@@ -26,21 +26,21 @@ type Product = {
 const products: Product[] = [
   {
     id: "zilal",
-    name: "عباية ظلال",
+    name: "عباية ١",
     description: "قصة واسعة من الكريب الياباني",
     price: 45,
     image: "/images/abaya-zilal.jpg",
   },
   {
     id: "najma",
-    name: "عباية نجمة",
+    name: "عباية ٢",
     description: "تفاصيل مطرزة مستوحاة من ضوء Rigel",
     price: 55,
     image: "/images/abaya-najma.jpg",
   },
   {
     id: "masar",
-    name: "عباية مسار",
+    name: "عباية ٣",
     description: "طيات طولية وأكمام محددة",
     price: 52,
     image: "/images/abaya-masar.jpg",
@@ -168,7 +168,7 @@ export default function Home() {
               <p className="section-kicker">مختارات الموسم</p>
               <h2>وصل حديثًا</h2>
             </div>
-            <p>عبايات عصرية بتفاصيل هادئة، تُفصّل لكِ وترافق حضورك من الصباح إلى المساء.</p>
+            <p>عبايات عصرية بتفاصيل هادئة، تُفصّل لكِ وترافق حضورك.</p>
           </div>
 
           <div className="product-grid">
@@ -220,7 +220,7 @@ export default function Home() {
         </div>
         <div className="story-copy">
           <p>
-            RIGEL هو نجم عملاق أزرق‑أبيض شديد اللمعان في كوكبة الجبار. ومن ضوئه استلهمنا عبايات تجمع بين البساطة الدقيقة والحضور الذي لا يحتاج إلى مبالغة.
+            RIGEL هو نجم عملاق أزرق‑أبيض شديد اللمعان . ومن ضوئه استلهمنا عبايات تجمع بين البساطة الدقيقة والحضور الذي لا يحتاج إلى مبالغة.
           </p>
           <a href="https://www.instagram.com/rigel.bh/" target="_blank" rel="noreferrer">
             تابعي قصتنا على إنستغرام <InstagramLogo aria-hidden="true" />
@@ -235,7 +235,7 @@ export default function Home() {
           <a href="https://www.instagram.com/rigel.bh/" target="_blank" rel="noreferrer">@Rigel.bh</a>
           <a href={`https://wa.me/?text=${contactMessage}`} target="_blank" rel="noreferrer">واتساب</a>
         </div>
-        <small>© 2026 RIGEL Abaya House · Bahrain</small>
+        <small>© 2026 RIGEL  · Bahrain</small>
       </footer>
 
       {searchOpen && (
