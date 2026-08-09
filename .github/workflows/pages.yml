@@ -35,8 +35,8 @@ jobs:
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width,initial-scale=1">
-            <meta http-equiv="refresh" content="0;url=https://rigel-abaya-house.ahassan5600.chatgpt.site/">
-            <link rel="canonical" href="https://rigel-abaya-house.ahassan5600.chatgpt.site/">
+            <meta http-equiv="refresh" content="0;url=https://ahassan5600-cpu.github.io/rigel-abaya-house/">
+            <link rel="canonical" href="https://ahassan5600-cpu.github.io/rigel-abaya-house/">
             <title>RIGEL | مصمّمة لتلفت بهدوء</title>
             <style>
               *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#020e24;color:#fff;font-family:Arial,sans-serif;text-align:center}.card{padding:2.5rem}.brand{font-family:Georgia,serif;font-size:3.5rem;letter-spacing:.12em;margin:0 0 1rem}.copy{color:#c9d1df;margin:0 0 1.5rem}.link{display:inline-block;color:#fff;border:1px solid #6e7f99;border-radius:999px;padding:.8rem 1.4rem;text-decoration:none}
@@ -46,9 +46,9 @@ jobs:
             <main class="card">
               <h1 class="brand">RIGEL</h1>
               <p class="copy">جارٍ فتح متجر RIGEL الرسمي…</p>
-              <a class="link" href="https://rigel-abaya-house.ahassan5600.chatgpt.site/">فتح الموقع</a>
+              <a class="link" href="https://ahassan5600-cpu.github.io/rigel-abaya-house/">فتح الموقع</a>
             </main>
-            <script>location.replace("https://rigel-abaya-house.ahassan5600.chatgpt.site/");</script>
+            <script>location.replace("https://ahassan5600-cpu.github.io/rigel-abaya-house/");</script>
           </body>
           </html>
           HTML
