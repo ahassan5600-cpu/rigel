@@ -322,7 +322,7 @@ export default function Home() {
                   <label>رقم الهاتف<input className="phone-input" name="phone" type="tel" inputMode="tel" dir="ltr" placeholder="+973 3XXX XXXX" required /></label>
                   <label>الملاحظات<textarea name="notes" rows={3} placeholder="أي تعديل أو تفصيل إضافي ترغبين به" /></label>
                   <button className="submit-order" type="submit">متابعة إلى العنوان والدفع <ArrowLeft aria-hidden="true" /></button>
-                  <small className="form-note">ستراجعين العنوان والتوصيل والدفع في الصفحة التالية.</small>
+                  <small className="form-note"> العنوان والتوصيل والدفع في الصفحة التالية.</small>
               </form>
             </div>
           </section>
