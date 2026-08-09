@@ -295,7 +295,7 @@ export default function Home() {
               <form onSubmit={submitOrder}>
                   <button className="inline-guide-button" type="button" onClick={showMeasurementGuide}>
                     <Ruler aria-hidden="true" />
-                    <span><strong>كيف آخذ المقاسات؟</strong><small>شاهدي الدليل المصوّر قبل إدخال القياسات</small></span>
+                    <span><strong>كيف آخذ المقاسات؟</strong><small>شاهدي الدليل قبل إدخال القياسات</small></span>
                     <ArrowLeft aria-hidden="true" />
                   </button>
                   <div className="form-row">
